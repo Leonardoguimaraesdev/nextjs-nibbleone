@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+        text-align: right;
+
+        h1{
+            font-size: 4rem;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: 55px;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin-left: 73px;
+            
+        }
+
+        h3{
+            font-size: 1.8rem;
+            font-family: sans-serif;
+            font-weight: 700;
+            
+        }
+
+        button{
+            background-color: transparent;
+            width: 420px;
+            padding: 20px;
+            border: 2px solid #9ad0e2;
+            color: #9ad0e2;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    }
+}
