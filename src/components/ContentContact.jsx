@@ -22,7 +22,7 @@ export default function ContentContact() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/enviar-email", {
+      const response = await fetch(process.env.NEXT_PUBLIC_EMAIL_API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
