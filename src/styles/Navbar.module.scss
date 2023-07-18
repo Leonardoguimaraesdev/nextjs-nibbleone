@@ -1,5 +1,5 @@
 .nav {
-    // position: fixed;
+    position: fixed;
     // top: 0;
     // left: 0;
     display: flex;
@@ -24,12 +24,19 @@
         justify-content: flex-end;
         width: 50%;
 
+        @media (max-width: 1000px) {
+            display: none;
+
+        }
+
         ul {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             margin-right: 60px;
             width: 50%;
+
+
 
             li {
                 list-style: none;
@@ -46,4 +53,55 @@
             }
         }
     }
+
+    .mobileMenuIcon {
+        display: none;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 60px;
+
+        @media (max-width: 1000px) {
+            display: flex;
+
+        }
+    }
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenuOpen {
+    position: fixed;
+    top:90px;
+    display: flex;
+    width: 100%;
+    background-color: #ddd;
+    padding: 15px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+
+
+        li {
+            list-style: none;
+            padding: 5px 10px 5px 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: sans-serif;
+
+            &:hover {
+                background-color: #28a7c5;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
 }
